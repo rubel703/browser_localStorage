@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>session storage</title>
+    </head>
+    <body>
+        <script>
+           /* sessionStorage.setItem("userName","Rubel");
+            sessionStorage.setItem("id","203-0032-006");
+            sessionStorage.setItem("education","B.Sc in CSE");*/
+
+           /* var edu=sessionStorage.getItem("education");
+            console.log(edu);*/
+
+           // sessionStorage.removeItem("id");
+
+            //sessionStorage.clear();
+
+            const user={id:"203-0032-006",name:"Rubel"};
+            sessionStorage.setItem("User",JSON.stringify(user));
+
+            const userInfo=JSON.parse(sessionStorage.getItem("User"));
+            console.log(userInfo)
+        </script>
+    </body>
+</html>

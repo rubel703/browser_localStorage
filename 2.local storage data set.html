@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>local storage</title>
+    </head>
+    <body>
+        <script>
+//local storage store data as key value pair-string
+//setItem(key,value)
+
+            localStorage.setItem("userName","Hossain Rubel");
+            localStorage.setItem("password","1234"); 
+            localStorage.setItem("University","University of South Asia") 
+            localStorage.setItem("ID","203-0032-006") 
+
+            //array system values not string 
+            let countries=["Bangladesh","Denmark","Norway","Turkey","Finland"];
+            localStorage.setItem("Countries",JSON.stringify(countries));
+        </script>
+    </body>
+</html>
